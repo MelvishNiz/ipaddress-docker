@@ -8,5 +8,4 @@ RUN apt-get update
 RUN apt-get upgrade -qy
 RUN apt-get install curl -qy
 RUN chmod +x run.sh
-COPY redsocks.conf /etc/redsocks.conf
 ENTRYPOINT /bin/bash run.sh
